@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { render } from 'react-dom';
 import Rate from './components/Rate';
 import './style.css';
@@ -28,7 +28,7 @@ const App = () => {
             </select>
           </div>
         </form>
-        <Rate />
+        <Rate from={currency} />
       </div>
     </div>
   );
